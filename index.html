@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бандерогусь</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" defer src="./src/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- first screen -->
+      <section class="bg-gradient-to-l from-[#A5DEFF] to-[#FCFEFF]">
+        <header
+          class="py-[33px] w-full h-full md:container md:mx-auto px-[95px]"
+        >
+          <div class="inline-flex items-center max-w-[261px] gap-[15px]">
+            <img
+              width="100"
+              height="39"
+              alt="Школа підготовки IT-спеціалістів"
+              src="./src/assets/logo.svg"
+            />
+            <h1 class="text-sm font-medium">
+              Школа підготовки IT-спеціалістів
+            </h1>
+          </div>
+        </header>
+        <section
+          class="
+            pb-[47px]
+            pt-[17px]
+            w-full
+            h-full
+            md:container md:mx-auto
+            px-[95px]
+            bg-auto
+            bg-[length:640px_720px]
+            bg-no-repeat
+            bg-[right_-3rem_bottom_-6rem]
+            bg-[url(/main-gus.svg)]
+          "
+        >
+          <article class="bg-white max-w-[570px] px-[56px] py-[60px]">
+            <div class="mb-[48px] flex flex-col gap-[29px]">
+              <p class="text-base font-semibold">
+                Доброго вечора, ми з України
+              </p>
+              <p class="text-2xl font-semibold text-[#FF6B0A]">
+                На старт. Увага. Полетіли!
+              </p>
+            </div>
+            <h2 class="text-6xl font-semibold mb-[37px]">Бандерогусь</h2>
+            <div class="flex flex-col gap-[16px]">
+              <p class="text-base font-normal">
+                Спеціальний бойовий гусак із біолабораторій України. Пишаюся
+                своїми подвигами, бороню Батьківщину та підтримую позитивний дух
+                народу. Слава Україні!
+              </p>
+              <button
+                id="open-gus-modal"
+                class="
+                  bg-[#FF6B0A]
+                  max-w-[257px]
+                  py-[24px]
+                  px-[16px]
+                  rounded-[8px]
+                  text-white
+                "
+              >
+                <span class="text-base font-normal"> Запустити гуся </span>
+              </button>
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- second screen -->
+      <section
+        class="
+          mt-[52px]
+          mb-[152px]
+          w-full
+          h-full
+          md:container md:mx-auto
+          px-[95px]
+        "
+      >
+        <div
+          class="
+            mb-[60px]
+            flex flex-col
+            items-center
+            justify-center
+            text-center
+          "
+        >
+          <div class="mb-[39px]">
+            <img
+              width="32"
+              height="52"
+              alt="Герб України"
+              src="./src/assets/emblem.svg"
+            />
+          </div>
+          <h2 class="mb-[24px] text-5xl font-semibold">
+            Цікаві факти про бандерогусей
+          </h2>
+          <p class="text-base font-normal max-w-[884px]">
+            Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
+            можуть атакувати ворога системою надпотужного озброєння. Також
+            нищать психологічно, активуючи високочастотне шипіння та
+            розмахування крилами
+          </p>
+        </div>
+        <div class="flex flex-row gap-[60px] items-center justify-center">
+          <article class="flex flex-col max-w-[247px] justify-between">
+            <div class="mb-[20px]">
+              <img
+                width="247"
+                height="270"
+                alt="Гусь з системою навігації"
+                src="./src/assets/gus-nav.svg"
+              />
+            </div>
+            <div class="flex flex-col gap-[12px]">
+              <h3 class="text-base font-normal">Система навігації</h3>
+              <p class="text-base font-normal">
+                Супутниковий GPS та ехолокатори розпізнають ворожу техніку
+                навіть на етапі збірки
+              </p>
+            </div>
+          </article>
+          <article class="flex flex-col max-w-[247px] justify-between">
+            <div class="mb-[20px]">
+              <img
+                width="249"
+                height="267"
+                alt="Гусь з очами-тепловізори"
+                src="./src/assets/gus-tvs.svg"
+              />
+            </div>
+            <div class="flex flex-col gap-[12px]">
+              <h3 class="text-base font-normal">Очі-тепловізори</h3>
+              <p class="text-base font-normal">
+                Допомагають виявити характер сигнатури об’єктів та значно
+                підвищують точність удару
+              </p>
+            </div>
+          </article>
+          <article class="flex flex-col max-w-[247px] justify-between">
+            <div class="mb-[20px]">
+              <img
+                width="351"
+                height="267"
+                class="min-h-[267px] min-w-[351px]"
+                alt="Гусь з байракрилами"
+                src="./src/assets/gus-jet.svg"
+              />
+            </div>
+            <div class="flex flex-col gap-[12px]">
+              <h3 class="text-base font-normal">Байракрила</h3>
+              <p class="text-base font-normal">
+                Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
+                «ніхріна собі» кілометрів
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="bg-gradient-to-l from-[#A5DEFF] to-[#FCFEFF]">
+        <section
+          class="
+            pt-[52px]
+            pb-[97px]
+            w-full
+            h-full
+            md:container md:mx-auto
+            px-[95px]
+          "
+        >
+          <div
+            class="
+              mb-[60px]
+              flex flex-col
+              items-center
+              justify-center
+              text-center
+            "
+          >
+            <div class="mb-[39px]">
+              <img
+                width="32"
+                height="52"
+                alt="Герб України"
+                src="./src/assets/emblem.svg"
+              />
+            </div>
+            <h2 class="mb-[68px] text-5xl font-semibold">
+              Перемога завжди за нами!
+            </h2>
+            <p class="text-base font-normal max-w-[625px]">
+              Головна мета бандерогусей — служити гумору та доброті нашого
+              народу. Ми забезпечимо вашу посмішку у часи, коли вона так
+              необхідна
+            </p>
+          </div>
+        </section>
+      </footer>
+    </main>
+    <dialog
+      id="send-gus-modal"
+      class="backdrop:bg-[#151516] backdrop:opacity-70 w-[573px]"
+    >
+      <form method="dialog">
+        <section
+          class="
+            w-full
+            h-full
+            md:container md:mx-auto
+            px-[82px]
+            pt-[32px]
+            pb-[41px]
+          "
+          id="send-gus-modal-step-1"
+          data-hidden="false"
+        >
+          <div
+            class="
+              mb-[20px]
+              flex flex-col
+              items-center
+              justify-center
+              text-center
+            "
+          >
+            <div class="mb-[39px]">
+              <img
+                width="32"
+                height="52"
+                alt="Герб України"
+                src="./src/assets/emblem.svg"
+              />
+            </div>
+            <h2 class="mb-[16px] text-2xl font-semibold">
+              Поділися, будь ласка, поштою
+            </h2>
+            <p class="text-base font-normal max-w-[282px]">
+              та запиши гуся до бандерозагону
+            </p>
+          </div>
+          <div
+            class="
+              mb-[40px]
+              flex flex-col
+              items-center
+              justify-center
+              gap-[16px]
+            "
+          >
+            <label>
+              <span class="text-base font-normal"> Ім’я </span>
+              <div
+                class="
+                  min-w-[374px]
+                  h-[48px]
+                  rounded-[8px]
+                  border-[1px] border-[#005BBB] border-solid
+                  focus-within:ring
+                  focus-within:ring-offset-2
+                  focus-within:ring-1
+                "
+              >
+                <input
+                  class="
+                    px-4
+                    focus:outline-none
+                    focus-visible:outline-none
+                    w-full
+                    h-full
+                    bg-transparent
+                    p-0
+                    m-0
+                  "
+                />
+              </div>
+            </label>
+            <label>
+              <span class="text-base font-normal"> Email </span>
+              <div
+                class="
+                  min-w-[374px]
+                  h-[48px]
+                  rounded-[8px]
+                  border-[1px] border-[#005BBB] border-solid
+                  focus-within:ring
+                  focus-within:ring-offset-2
+                  focus-within:ring-1
+                "
+              >
+                <input
+                  class="
+                    rounded-[8px]
+                    px-4
+                    focus:outline-none
+                    focus-visible:outline-none
+                    w-full
+                    h-full
+                    bg-transparent
+                    p-0
+                    m-0
+                  "
+                />
+              </div>
+            </label>
+          </div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <button
+              id="send-gus-modal-confirm"
+              value="ok"
+              class="
+                bg-[#FF6B0A]
+                w-[257px]
+                py-[24px]
+                px-[16px]
+                rounded-[8px]
+                text-white
+              "
+            >
+              <span class="text-base font-normal"> Запустити гуся </span>
+            </button>
+          </div>
+        </section>
+        <section
+          class="
+            w-full
+            h-full
+            md:container md:mx-auto
+            px-[82px]
+            pt-[32px]
+            pb-[41px]
+            hidden
+          "
+          id="send-gus-modal-step-2"
+          data-hidden="true"
+        >
+          <div
+            class="
+              mb-[20px]
+              flex flex-col
+              items-center
+              justify-center
+              text-center
+            "
+          >
+            <div class="mb-[39px]">
+              <img
+                width="32"
+                height="52"
+                alt="Герб України"
+                src="./src/assets/emblem.svg"
+              />
+            </div>
+            <h2 class="mb-[16px] text-2xl font-semibold">
+              Бандерогусь запущений!
+            </h2>
+          </div>
+          <div class="mb-[20px]">
+            <img
+              width="351"
+              height="267"
+              class="min-h-[267px] min-w-[351px]"
+              alt="Гусь з байракрилами"
+              src="./src/assets/gus-jet.svg"
+            />
+          </div>
+        </section>
+        <button
+          id="send-gus-modal-confirm"
+          class="absolute top-[24px] right-[24px]"
+          value="close"
+        >
+          <img
+            width="14"
+            height="14"
+            alt="Закрити модальне вікно надсилання гуся"
+            src="./src/assets/close.svg"
+          />
+        </button>
+      </form>
+    </dialog>
+  </body>
+</html>
