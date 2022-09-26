@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tw-paper-spinner {
+  --paper-spinner-layer-1-color: white;
+  --paper-spinner-layer-2-color: white;
+  --paper-spinner-layer-3-color: white;
+  --paper-spinner-layer-4-color: white;
+}

@@ -330,6 +330,7 @@
           </div>
           <div class="flex flex-col items-center justify-center text-center">
             <button
+              id="send-gus-modal-form-submit"
               type="submit"
               class="
                 bg-[#FF6B0A]
@@ -340,7 +341,14 @@
                 text-white
               "
             >
-              <span class="text-base font-normal"> Запустити гуся </span>
+              <span class="text-base font-normal" data-text>
+                Запустити гуся
+              </span>
+              <paper-spinner
+                active
+                class="tw-paper-spinner hidden"
+                data-loader
+              ></paper-spinner>
             </button>
           </div>
         </section>
