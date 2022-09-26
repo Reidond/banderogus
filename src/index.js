@@ -23,6 +23,12 @@ OPEN_GUS_MODAL.addEventListener('click', () => {
   showModal(SEND_GUS_MODAL);
 });
 
+SUCCESS_GUS_MODAL.addEventListener('close', () => {
+  if (SUCCESS_GUS_MODAL.returnValue === 'close') {
+    location.reload();
+  }
+});
+
 SEND_GUS_MODAL_FORM.addEventListener('submit', (e) => {
   e.preventDefault();
 
