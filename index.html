@@ -44,7 +44,7 @@
             bg-auto
             bg-[length:640px_720px]
             bg-no-repeat
-            bg-[right_-3rem_bottom_-6rem]
+            bg-[right_-0.5rem_bottom_-6rem]
             bg-[url(/main-gus.svg)]
           "
         >
@@ -130,7 +130,7 @@
               />
             </div>
             <div class="flex flex-col gap-[12px]">
-              <h3 class="text-base font-normal">Система навігації</h3>
+              <h3 class="text-base font-semibold">Система навігації</h3>
               <p class="text-base font-normal">
                 Супутниковий GPS та ехолокатори розпізнають ворожу техніку
                 навіть на етапі збірки
@@ -147,7 +147,7 @@
               />
             </div>
             <div class="flex flex-col gap-[12px]">
-              <h3 class="text-base font-normal">Очі-тепловізори</h3>
+              <h3 class="text-base font-semibold">Очі-тепловізори</h3>
               <p class="text-base font-normal">
                 Допомагають виявити характер сигнатури об’єктів та значно
                 підвищують точність удару
@@ -165,7 +165,7 @@
               />
             </div>
             <div class="flex flex-col gap-[12px]">
-              <h3 class="text-base font-normal">Байракрила</h3>
+              <h3 class="text-base font-semibold">Байракрила</h3>
               <p class="text-base font-normal">
                 Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
                 «ніхріна собі» кілометрів
@@ -219,7 +219,7 @@
       id="send-gus-modal"
       class="backdrop:bg-[#151516] backdrop:opacity-70 w-[573px]"
     >
-      <form method="dialog">
+      <form action="#" id="send-gus-modal-form">
         <section
           class="
             w-full
@@ -229,8 +229,6 @@
             pt-[32px]
             pb-[41px]
           "
-          id="send-gus-modal-step-1"
-          data-hidden="false"
         >
           <div
             class="
@@ -279,7 +277,12 @@
                 "
               >
                 <input
+                  required
+                  name="name"
+                  type="text"
+                  placeholder="Введіть ваше ім’я..."
                   class="
+                    rounded-[8px]
                     px-4
                     focus:outline-none
                     focus-visible:outline-none
@@ -306,6 +309,10 @@
                 "
               >
                 <input
+                  required
+                  name="email"
+                  type="email"
+                  placeholder="Введіть ваше емейл..."
                   class="
                     rounded-[8px]
                     px-4
@@ -323,8 +330,7 @@
           </div>
           <div class="flex flex-col items-center justify-center text-center">
             <button
-              id="send-gus-modal-confirm"
-              value="ok"
+              type="submit"
               class="
                 bg-[#FF6B0A]
                 w-[257px]
@@ -382,11 +388,65 @@
             />
           </div>
         </section>
-        <button
-          id="send-gus-modal-confirm"
-          class="absolute top-[24px] right-[24px]"
-          value="close"
+      </form>
+      <form method="dialog">
+        <button class="absolute top-[24px] right-[24px]" value="close">
+          <img
+            width="14"
+            height="14"
+            alt="Закрити модальне вікно надсилання гуся"
+            src="./src/assets/close.svg"
+          />
+        </button>
+      </form>
+    </dialog>
+    <dialog
+      id="success-gus-modal"
+      class="backdrop:bg-[#151516] backdrop:opacity-70 w-[573px]"
+    >
+      <form method="dialog">
+        <section
+          class="
+            w-full
+            h-full
+            md:container md:mx-auto
+            px-[82px]
+            pt-[32px]
+            pb-[41px]
+          "
         >
+          <div
+            class="
+              mb-[20px]
+              flex flex-col
+              items-center
+              justify-center
+              text-center
+            "
+          >
+            <div class="mb-[39px]">
+              <img
+                width="32"
+                height="52"
+                alt="Герб України"
+                src="./src/assets/emblem.svg"
+              />
+            </div>
+            <h2 class="mb-[16px] text-2xl font-semibold">
+              Бандерогусь запущений!
+            </h2>
+          </div>
+          <div class="mb-[20px]">
+            <img
+              width="351"
+              height="267"
+              class="min-h-[267px] min-w-[351px]"
+              alt="Гусь з байракрилами"
+              src="./src/assets/gus-jet.svg"
+            />
+          </div>
+        </section>
+        <button class="absolute top-[24px] right-[24px]" value="close">
           <img
             width="14"
             height="14"
